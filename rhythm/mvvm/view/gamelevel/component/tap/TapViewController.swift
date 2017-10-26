@@ -7,17 +7,7 @@
 //
 
 import UIKit
-
-protocol TapViewControllerDelegate{
-    func startNewGame()
-    func update(tick: Int)
-    func playerTurn()
-    func playerCorrectMove(counter: Int)
-    func playerWrongMove(counter: Int)
-    func gameFinished(score: GameViewModel.PlayerScore)
-    
-    func simonButtonToPress(item: GameViewModel.Simoncolor)
-}
+import SimonGamePod
 
 class TapViewController: UIViewController{
     
@@ -30,12 +20,12 @@ class TapViewController: UIViewController{
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
     
-    var viewModel: GameViewModel!
-    var colorLightMapper: [GameViewModel.Simoncolor: UIView]!
+    var viewModel: SimonGameViewModel!
+    var colorLightMapper: [SimonGameViewModel.Simoncolor: UIView]!
     var tickDuration: Double!
     
     //MARK: - Setup from coordinator
-    func setup(viewModel: GameViewModel){
+    func setup(viewModel: SimonGameViewModel){
         self.viewModel?.delegate = self
         self.viewModel = viewModel
         self.tickDuration = viewModel.tickDurationSeconds
@@ -92,9 +82,9 @@ class TapViewController: UIViewController{
     }
 }
 
-extension TapViewController: TapViewControllerDelegate {
+extension TapViewController: SimonGameViewControllerDelegate {
     
-    func gameFinished(score: GameViewModel.PlayerScore) {
+    func gameFinished(score: SimonGameViewModel.PlayerScore) {
         let scoreMessage = "correct: \(score.correct)\n\nerrors: \(score.errors)"
         let alert = UIAlertController(title: "Game finished", message: scoreMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Restart!", style: .default, handler: { [weak self](_) in
@@ -128,7 +118,7 @@ extension TapViewController: TapViewControllerDelegate {
         }
     }
     
-    func simonButtonToPress(item: GameViewModel.Simoncolor) {
+    func simonButtonToPress(item: SimonGameViewModel.Simoncolor) {
         guard let lightView = colorLightMapper?[item] else {
             return
         }

@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
+import SimonGamePod
 
 class GameCoordinator {
     
     func start() -> UIViewController {
         let tapViewController = TapViewController()
-        let gameViewModel = GameViewModel(tickDurationSeconds: 1.0)
+        let gameViewModel = SimonGameViewModel(tickDurationSeconds: 1.0)
         gameViewModel.delegate = tapViewController
         tapViewController.setup(viewModel: gameViewModel)
         return tapViewController

@@ -1,6 +1,6 @@
 //
-//  GameViewModel.swift
-//  rhythm
+//  SimonGameViewModel.swift
+//  SimonGamePod
 //
 //  Created by William Pompei on 23/10/2017.
 //  Copyright © 2017 William Pompei. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GameViewModel{
+public class SimonGameViewModel{
     
     //MARK: - Game structure data
     public  enum Simoncolor: Int{
@@ -61,7 +61,7 @@ public class GameViewModel{
     //MARK: - view model property
     
     //view controller callback
-    var delegate: TapViewControllerDelegate?
+    public var delegate: SimonGameViewControllerDelegate?
     
     //play sequence
     var simonSequence = [SimonSequenceItem]()
@@ -72,12 +72,12 @@ public class GameViewModel{
     var playerPlay: PlayerPlay!
     
     //tick duration (eg. lower value increase game speed)
-    private(set) var tickDurationSeconds: TimeInterval
-    private let sequenceLenght: Int
-    private let lastMoveDuration: Int
+    public var tickDurationSeconds: TimeInterval
+    let sequenceLenght: Int
+    let lastMoveDuration: Int
     
     //MARK: -
-    init(tickDurationSeconds: Double, sequenceLenght: Int = 4, lastMoveDuration: Int = 4){
+    public init(tickDurationSeconds: Double, sequenceLenght: Int = 4, lastMoveDuration: Int = 4){
         self.tickDurationSeconds = tickDurationSeconds
         self.sequenceLenght = sequenceLenght
         self.lastMoveDuration = lastMoveDuration
@@ -85,7 +85,7 @@ public class GameViewModel{
 }
 
 //MARK: - state machine
-private extension GameViewModel {
+extension SimonGameViewModel {
     
     func selectNextValidItem(for timerTick: TimeInterval) {
         if let item = simonSequence.filter({ $0.time == timerTick}).first {
@@ -107,7 +107,8 @@ private extension GameViewModel {
         }
     }
     
-    private func evolveGameState(using action: GameAction){
+    @available(iOS 10.0, *)
+    func evolveGameState(using action: GameAction){
         switch gameState {
         case .waitingToStart :
             switch action {
@@ -198,7 +199,7 @@ private extension GameViewModel {
         }
     }
     
-    private func finishGame(){
+    func finishGame(){
         timer?.invalidate()
         timer = nil
         self.delegate?.gameFinished(score: playerPlay.score)
@@ -206,7 +207,7 @@ private extension GameViewModel {
     }
 }
 
-extension GameViewModel {
+extension SimonGameViewModel {
     
     struct PlayerPlay{
         var score: PlayerScore = PlayerScore()
@@ -218,11 +219,12 @@ extension GameViewModel {
 }
 
 //MARK: public interface 
-public extension GameViewModel {
+public extension SimonGameViewModel {
     
-    struct PlayerScore{
-        var correct: Int = 0
-        var errors: Int = 0
+    public struct
+    PlayerScore{
+        public var correct: Int = 0
+        public var errors: Int = 0
     }
     
     //MARK: - setup game (phase 1)

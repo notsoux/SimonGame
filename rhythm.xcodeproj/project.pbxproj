@@ -7,28 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22061074E38CF61218CB1032 /* Pods_rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D9580A610F535060519C8 /* Pods_rhythm.framework */; };
 		3D4F9D7D1F9CF97F00339260 /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F9D7B1F9CF97F00339260 /* TapViewController.swift */; };
 		3D4F9D7E1F9CF97F00339260 /* TapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4F9D7C1F9CF97F00339260 /* TapViewController.xib */; };
 		3D8751DD1F9B1FBA00E8C978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8751DC1F9B1FBA00E8C978 /* AppDelegate.swift */; };
 		3D8751E41F9B1FBA00E8C978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8751E31F9B1FBA00E8C978 /* Assets.xcassets */; };
 		3D8751E71F9B1FBA00E8C978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8751E51F9B1FBA00E8C978 /* LaunchScreen.storyboard */; };
-		3D8751F21F9B1FBB00E8C978 /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8751F11F9B1FBB00E8C978 /* GameViewModelTests.swift */; };
 		3D87520F1F9B229000E8C978 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87520E1F9B229000E8C978 /* Constant.swift */; };
 		3D8752111F9B254800E8C978 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8752101F9B254800E8C978 /* GameCoordinator.swift */; };
-		AC85B6791F9DCEB500F33458 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85B6781F9DCEB500F33458 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3D8751EE1F9B1FBB00E8C978 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D8751D11F9B1FBA00E8C978 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D8751D81F9B1FBA00E8C978;
-			remoteInfo = rhythm;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		298D9580A610F535060519C8 /* Pods_rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4F9D7B1F9CF97F00339260 /* TapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
 		3D4F9D7C1F9CF97F00339260 /* TapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TapViewController.xib; sourceTree = "<group>"; };
 		3D8751D91F9B1FBA00E8C978 /* rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,12 +26,10 @@
 		3D8751E31F9B1FBA00E8C978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8751E61F9B1FBA00E8C978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8751E81F9B1FBA00E8C978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D8751ED1F9B1FBB00E8C978 /* rhythmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rhythmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D8751F11F9B1FBB00E8C978 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
-		3D8751F31F9B1FBB00E8C978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D87520E1F9B229000E8C978 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		3D8752101F9B254800E8C978 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
-		AC85B6781F9DCEB500F33458 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		9D9F42718DE5FF203D487492 /* Pods-rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhythm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhythm/Pods-rhythm.debug.xcconfig"; sourceTree = "<group>"; };
+		D001C31D2EF97501D53DCA6B /* Pods-rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhythm.release.xcconfig"; path = "Pods/Target Support Files/Pods-rhythm/Pods-rhythm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,13 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D8751EA1F9B1FBB00E8C978 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				22061074E38CF61218CB1032 /* Pods_rhythm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				3D8751DB1F9B1FBA00E8C978 /* rhythm */,
-				3D8751F01F9B1FBB00E8C978 /* rhythmTests */,
 				3D8751DA1F9B1FBA00E8C978 /* Products */,
+				F62903B5F183F1837E9C29F8 /* Pods */,
+				FCD1973CDBBB9E90E61A19ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				3D8751D91F9B1FBA00E8C978 /* rhythm.app */,
-				3D8751ED1F9B1FBB00E8C978 /* rhythmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,23 +82,6 @@
 				3D8751E81F9B1FBA00E8C978 /* Info.plist */,
 			);
 			path = rhythm;
-			sourceTree = "<group>";
-		};
-		3D8751F01F9B1FBB00E8C978 /* rhythmTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D8751F11F9B1FBB00E8C978 /* GameViewModelTests.swift */,
-				3D8751F31F9B1FBB00E8C978 /* Info.plist */,
-			);
-			path = rhythmTests;
-			sourceTree = "<group>";
-		};
-		3D8751FC1F9B1FCC00E8C978 /* viewmodel */ = {
-			isa = PBXGroup;
-			children = (
-				AC85B6781F9DCEB500F33458 /* GameViewModel.swift */,
-			);
-			path = viewmodel;
 			sourceTree = "<group>";
 		};
 		3D8751FF1F9B1FE200E8C978 /* view */ = {
@@ -140,7 +105,6 @@
 			children = (
 				3D8752001F9B1FEA00E8C978 /* coordinator */,
 				3D8751FF1F9B1FE200E8C978 /* view */,
-				3D8751FC1F9B1FCC00E8C978 /* viewmodel */,
 			);
 			path = mvvm;
 			sourceTree = "<group>";
@@ -169,6 +133,23 @@
 			path = constant;
 			sourceTree = "<group>";
 		};
+		F62903B5F183F1837E9C29F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D9F42718DE5FF203D487492 /* Pods-rhythm.debug.xcconfig */,
+				D001C31D2EF97501D53DCA6B /* Pods-rhythm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCD1973CDBBB9E90E61A19ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				298D9580A610F535060519C8 /* Pods_rhythm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D8751F61F9B1FBB00E8C978 /* Build configuration list for PBXNativeTarget "rhythm" */;
 			buildPhases = (
+				2166CD819C81FFB30470FAF8 /* [CP] Check Pods Manifest.lock */,
 				3D8751D51F9B1FBA00E8C978 /* Sources */,
 				3D8751D61F9B1FBA00E8C978 /* Frameworks */,
 				3D8751D71F9B1FBA00E8C978 /* Resources */,
+				8CECDD378559AA53CD751EF5 /* [CP] Embed Pods Frameworks */,
+				733A44B691CB8DA0F0CF16F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,24 +172,6 @@
 			productName = rhythm;
 			productReference = 3D8751D91F9B1FBA00E8C978 /* rhythm.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3D8751EC1F9B1FBB00E8C978 /* rhythmTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D8751F91F9B1FBB00E8C978 /* Build configuration list for PBXNativeTarget "rhythmTests" */;
-			buildPhases = (
-				3D8751E91F9B1FBB00E8C978 /* Sources */,
-				3D8751EA1F9B1FBB00E8C978 /* Frameworks */,
-				3D8751EB1F9B1FBB00E8C978 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D8751EF1F9B1FBB00E8C978 /* PBXTargetDependency */,
-			);
-			name = rhythmTests;
-			productName = rhythmTests;
-			productReference = 3D8751ED1F9B1FBB00E8C978 /* rhythmTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -220,11 +186,6 @@
 					3D8751D81F9B1FBA00E8C978 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-					};
-					3D8751EC1F9B1FBB00E8C978 = {
-						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3D8751D81F9B1FBA00E8C978;
 					};
 				};
 			};
@@ -242,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				3D8751D81F9B1FBA00E8C978 /* rhythm */,
-				3D8751EC1F9B1FBB00E8C978 /* rhythmTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,21 +218,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D8751EB1F9B1FBB00E8C978 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2166CD819C81FFB30470FAF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		733A44B691CB8DA0F0CF16F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rhythm/Pods-rhythm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CECDD378559AA53CD751EF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rhythm/Pods-rhythm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D8751D51F9B1FBA00E8C978 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC85B6791F9DCEB500F33458 /* GameViewModel.swift in Sources */,
 				3D4F9D7D1F9CF97F00339260 /* TapViewController.swift in Sources */,
 				3D8752111F9B254800E8C978 /* GameCoordinator.swift in Sources */,
 				3D87520F1F9B229000E8C978 /* Constant.swift in Sources */,
@@ -280,23 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D8751E91F9B1FBB00E8C978 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D8751F21F9B1FBB00E8C978 /* GameViewModelTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3D8751EF1F9B1FBB00E8C978 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D8751D81F9B1FBA00E8C978 /* rhythm */;
-			targetProxy = 3D8751EE1F9B1FBB00E8C978 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D8751E51F9B1FBA00E8C978 /* LaunchScreen.storyboard */ = {
@@ -419,6 +403,7 @@
 		};
 		3D8751F71F9B1FBB00E8C978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9F42718DE5FF203D487492 /* Pods-rhythm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,6 +419,7 @@
 		};
 		3D8751F81F9B1FBB00E8C978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D001C31D2EF97501D53DCA6B /* Pods-rhythm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,40 +430,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3D8751FA1F9B1FBB00E8C978 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B5QW9XW7YB;
-				INFOPLIST_FILE = rhythmTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = notsoux.rhythmTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rhythm.app/rhythm";
-			};
-			name = Debug;
-		};
-		3D8751FB1F9B1FBB00E8C978 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B5QW9XW7YB;
-				INFOPLIST_FILE = rhythmTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = notsoux.rhythmTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rhythm.app/rhythm";
 			};
 			name = Release;
 		};
@@ -498,15 +450,6 @@
 			buildConfigurations = (
 				3D8751F71F9B1FBB00E8C978 /* Debug */,
 				3D8751F81F9B1FBB00E8C978 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D8751F91F9B1FBB00E8C978 /* Build configuration list for PBXNativeTarget "rhythmTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D8751FA1F9B1FBB00E8C978 /* Debug */,
-				3D8751FB1F9B1FBB00E8C978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
