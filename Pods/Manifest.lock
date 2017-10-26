@@ -1,11 +1,11 @@
 PODS:
-  - SimonGamePod (0.1.3)
+  - SimonGamePod (0.1.5)
 
 DEPENDENCIES:
   - SimonGamePod
 
 SPEC CHECKSUMS:
-  SimonGamePod: e18d68e2fe488c1126e35eebbde16715e9385e38
+  SimonGamePod: b2a5fb5ff49e6e79a7cbc42cceea0e28439cb93f
 
 PODFILE CHECKSUM: 9aabffbce0b34a6e879ec7b2a12804bb92669ab9
 
